@@ -8,7 +8,15 @@ export default function Index(){
         <main> 
             <h1>Calcular Média</h1>
 
-
+            <div> 
+                Primeira nota: <input type = "text" />
+            </div>
+            <div> 
+                Segunda nota: <input type = "text" />
+            </div>
+            <div> 
+                Terceira nota: <input type = "text" />
+            </div>
         </main>
     )
 
