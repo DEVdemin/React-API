@@ -1,7 +1,39 @@
-export default function index(){
+import { useState } from "react"
+import axios from "axios";
+
+export default function Index(){
+    const [numeros, setNumeros] = useState([]);
+    const [numero, setNumero] = useState([]);
+    const [resposta, setResposta ] = useState('');
+    
+    async function verificacao() {
+        const resp = await axios.post('http://localhost:5000/maiornumero', numeros);
+        setResposta(resp.data.Maior);
+    }
+    
+    function add(){
+        setNumeros([...numeros, numero])
+        setNumero(0);
+    }
+    
     return (
         <main> 
             <h1> Maior Numero </h1>
+
+            <div>
+                Número: <input type='text' value={numero} onChange={e =>setNumero(Number(e.target.value))} /> <button onClick={add}> Adicionar um Número </button>
+            </div>
+
+            <div>
+                {numeros.map(item =>
+                    <div> {item} </div>
+                )}
+            </div>
+
+            <div>
+                <button onClick={verificacao} >Verificar</button>Maior Número é:  {resposta}
+            </div>
+
         </main>
     )
 }
