@@ -1,0 +1,54 @@
+
+
+
+
+.cor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../../../public/o-que-é-círculo-cromático.webp');
+    height: 100vh;
+    width: 100vw;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    background-position: 50% 50%;
+    gap: 1.5rem;
+
+    h1{
+        font-size: 3rem;
+    }
+
+    .corin{
+        font-size: 1.5rem;
+    }
+
+    input{
+        border: black solid 0.5px ;
+        width: 10rem;
+        height: 1.5rem;
+    }
+
+    .bo{
+        font-size: 1.5rem;
+    }
+
+    button{
+        width: 7rem;
+        height: 2rem;
+        background-color: rgb(175, 2, 2);
+        color: #fff;
+        font-size: 1.1rem;
+
+    }
+
+    .per{
+        font-size: 1.5rem;
+    }
+
+
+
+
+
+}
