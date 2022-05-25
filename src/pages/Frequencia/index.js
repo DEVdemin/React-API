@@ -17,25 +17,30 @@ export default function Index(){
     return (
 
 
-        <main> 
+        <main className="freq">
+            <section className="j"> 
             <h1> Frequêcia de um caractere</h1>
 
-            <div>
-                Texto: <input type='text' value={texto} onChange= {e => setTexto(e.target.value)} />
-            </div>
+            
+                <div>
+                    Texto: <input type='text' value={texto} onChange= {e => setTexto(e.target.value)} />
+                </div>
 
-            <div>
-                Caractere: <input type='text' value={caractere} onChange= {e => setCaractere(e.target.value)} />
-            </div>
+                <div>
+                    Caractere: <input type='text' value={caractere} onChange= {e => setCaractere(e.target.value)} />
+                </div>
 
-            <div>
-                <button onClick={verificarFrequencia} > Verificar Frequêcia de Caractere </button>
-            </div>
+                <div>
+                    <button onClick={verificarFrequencia} > Verificar Frequêcia de Caractere </button>
+                </div>
 
-            <div>
-                Frequêcia: {resposta}
-            </div>
+                <div>
+                    Frequêcia: {resposta}
+                </div>
+                
+                <a href="/">Voltar</a>
 
+            </section>
         </main>
     )
 }
