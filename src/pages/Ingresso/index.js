@@ -1,6 +1,6 @@
 import { useState } from "react";
 import axios from "axios"
-
+import './index.scss'
 
 
 export default function Index(){
@@ -24,11 +24,12 @@ export default function Index(){
 
         
     return (
-        <main> 
-            <h1> Ingresso </h1>
+        <main className="main"> 
+        <div className="cont">
+            <h1 className="Ingresso"> Ingresso </h1>
 
             <div> 
-                Qtd.Inteiras:<input type = "text"  value={qtdInteiras} onChange={e=> setqtdInteiras(Number(e.target.value))}/>
+                Qtd.Inteiras:<input type = "text"   value={qtdInteiras} onChange={e=> setqtdInteiras(Number(e.target.value))}/>
             </div>
             <div> 
                 Qtd.Meias:<input type = "text" value={qtdMeias} onChange={e=> setqtdMeias(Number(e.target.value))}  />
@@ -44,6 +45,7 @@ export default function Index(){
             </div>
             <div> 
                 O total é de: {Total}
+             </div>
              </div>
         </main>
     )

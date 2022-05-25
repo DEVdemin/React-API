@@ -1,0 +1,30 @@
+.main{
+    background-image: url('https://img.freepik.com/vetores-gratis/fundo-de-festival-de-cinema-cinema-filme_1017-23458.jpg?w=2000');
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-position: 0px -90px;
+    color: purple;
+    font-size: 1em;
+
+
+    h1{
+        font-size: 3em;
+        color: purple;
+    }
+
+    input{
+        font-size: 1em;
+    }
+    
+
+    button{
+        width: 7rem;
+        height: 2rem;
+        background-color: #af0202;
+        color: #fff;
+        font-size: 1.1rem;
+    }
+}
