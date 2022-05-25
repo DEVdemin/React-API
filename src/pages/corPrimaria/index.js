@@ -32,6 +32,8 @@ export default function Index(){
             <div className="per">
                 É cor Primária? {resposta}
             </div>
+
+            <a href="/">Voltar</a>
         </main>
     )
 }
