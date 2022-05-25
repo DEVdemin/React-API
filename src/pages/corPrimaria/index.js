@@ -7,7 +7,7 @@ export default function Index(){
     const [resposta, setResposta] = useState('');
   async  function verificarCor(){
        const resp = await  axios.get('http://localhost:5000/corprimaria/' + cor);
-       if( resp.data.primaria ===    true){
+       if( resp.data.Primária === true){
            setResposta('Sim!');
        }
        else {
