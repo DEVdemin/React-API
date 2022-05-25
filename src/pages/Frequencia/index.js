@@ -1,10 +1,13 @@
 import { useState } from "react"
 import axios from "axios";
+import './index.scss';
 
 export default function Index(){
     const [texto, setTexto] = useState('');
     const [caractere, setCaractere] = useState('');
     const [resposta, setResposta] = useState('');
+
+
 
     async function verificarFrequencia() {
         const resp = await axios.get(`http://localhost:5000/dia2/freqcaracter/${texto}/${caractere}`)
