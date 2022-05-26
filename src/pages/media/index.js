@@ -9,9 +9,9 @@ export default function Index(){
     const [resposta, setResposta]= useState('');
 
     async function calcularMedia() {
-        const resp = await axios.post('http://localhost:5000/media', {
-            
-        })
+        const resp = await axios.post('http://localhost:5000/media'); 
+        setResposta(resp.data.media)
+        
     }   
 
     return(
@@ -29,11 +29,11 @@ export default function Index(){
             </div>
 
             <div> 
-                <button>Calcular</button>
+                <button onClick={calcularMedia} >Calcular</button>
             </div>
 
             <div> 
-                A Média é: {resposta}
+                A média é: {resposta}
             </div>
 
             <a href="/">Voltar</a>
