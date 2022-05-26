@@ -23,13 +23,13 @@ export default function Index(){
             <h1>Calcular Média</h1>
 
             <div> 
-                Primeira nota: <input type = "text" value={nota1} onChange = {e => setNota1(e.target.value) } />
+                Primeira nota: <input type = "text" value={nota1} onChange = {e => setNota1(Number(e.target.value)) } />
             </div>
             <div> 
-                Segunda nota: <input type = "text" value={nota2} onChange = {e => setNota2(e.target.value) } />
+                Segunda nota: <input type = "text" value={nota2} onChange = {e => setNota2(Number(e.target.value)) } />
             </div>
             <div> 
-                Terceira nota: <input type = "text" value={nota3} onChange = {e => setNota3(e.target.value) } />
+                Terceira nota: <input type = "text" value={nota3} onChange = {e => setNota3(Number(e.target.value)) } />
             </div>
 
             <div> 
