@@ -2,14 +2,17 @@ import { useState } from "react";
 import axios from "axios";
 
 export default function Index(){
-    const [n1, setN1] = useState('');
-    const [n2, setN2] = useState('');
-    const [resposta, setResposta] = useState('');
+    const [numero1, setnumero1] = useState(0);
+    const [numero2, setnumero2] = useState(0);
+    const [resposta, setResposta] = useState(0);
 
 
 
     async function calcularSoma() {
-        const resp = await axios.get('http://localhost:5000/somar?a&b');
+        const resp = await axios.post('http://localhost:5000/somar',{
+            a:numero1,
+            b:numero2
+        });
         setResposta(resp.data.soma)
     }
 
@@ -22,11 +25,11 @@ export default function Index(){
 
             
                 <div>
-                    Primeiro número: <input type='text' value={n1} onChange= {e => setN1(e.target.value)} />
+                    Primeiro número: <input type='text' value={numero1} onChange= {e => setnumero1(Number(e.target.value))} />
                 </div>
 
                 <div>
-                    Segunda número: <input type='text' value={n2} onChange= {e => setN2(e.target.value)} />
+                    Segunda número: <input type='text' value={numero2} onChange= {e => setnumero2(Number(e.target.value))} />
                 </div>
 
                 <div>
