@@ -9,7 +9,11 @@ export default function Index(){
     const [resposta, setResposta]= useState('');
 
     async function calcularMedia() {
-        const resp = await axios.post('http://localhost:5000/media'); 
+        const resp = await axios.post('http://localhost:5000/media', {
+            n1:nota1,
+            n2:nota2,
+            n3:nota3
+        }) 
         setResposta(resp.data.media)
         
     }   
