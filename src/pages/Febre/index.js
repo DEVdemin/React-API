@@ -1,6 +1,6 @@
 import { useState } from "react"
 import axios from "axios";
-
+import './index.scss';
 
 export default function Index(){
     const [temp, setTemp] = useState();
@@ -22,12 +22,12 @@ export default function Index(){
     return (
 
 
-        <main className="termômetro">
+        <main className="termometro">
             <section className="j"> 
-            <h1> Tabuada</h1>
+            <h1> Medidor de temperatura</h1>
 
             
-                <div>
+                <div className="roger">
                     Número: <input type='text' value={temp} onChange= {e => setTemp(Number(e.target.value))} />
                 </div>                
 
@@ -35,7 +35,7 @@ export default function Index(){
                     <button onClick={calcularTemperatura} > Checar temperatura </button>
                 </div>
 
-                <div>
+                <div className="roger">
                     Está com febre?: {resposta}
                 </div>
                 

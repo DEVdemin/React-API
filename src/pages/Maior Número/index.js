@@ -19,23 +19,26 @@ export default function Index(){
     }
     
     return (
-        <main> 
+        <main className="maior"> 
             <h1> Maior Numero </h1>
 
             <div>
                 Número: <input type='text' value={numero} onChange={e =>setNumero(Number(e.target.value))} /> <button onClick={add}> Adicionar um Número </button>
             </div>
 
-            <div>
+            <div className="a">
                 {numeros.map(item =>
                     <div> {item} </div>
                 )}
             </div>
 
             <div>
-                <button onClick={verificacao} >Verificar</button>Maior Número é:  {resposta}
+                <button onClick={verificacao} >Verificar</button>
             </div>
-            
+            <div>    
+                Maior Número é:  {resposta}
+            </div>
+
             <a href="/">Voltar</a>
 
         </main>
