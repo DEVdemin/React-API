@@ -17,7 +17,8 @@
         flex-direction: column;
         list-style: none;
         align-items: center;
-        justify-content: space-around;
+        justify-content: center;
+        gap: 2rem;
         width: 80vw;
         text-align: center;
         height: 100vh;
@@ -50,8 +51,17 @@
         background-color: #2803af;
         border-radius: 2rem;
         padding: 0.3rem 1rem;
+        width: 12rem;
+        height: 2.2rem;
+        align-items: center;
+        justify-content: center;
+        display: flex;
     }
 
-
+    .b:hover{
+        width: 12.7rem;
+        height: 2.5rem;
+        font-size: 1.7rem;
+    }
 
 }
