@@ -13,7 +13,7 @@ export default function Index(){
                 <li> <Link to = '/maiorNumero' className="b"> Maior Número </Link> </li>
                 <li> <Link  to  ='/dobro' className="b"> Dobro </Link> </li>
                 <li> <Link  to  ='/media' className="b"> Média </Link> </li>
-                <li> <Link  to  ='/somapost' className="b"> Soma Post </Link> </li>
+                <li> <Link  to  ='/somapost' className="b"> Soma </Link> </li>
                 <li> <Link  to  ='/tabuada' className="b"> Tabuada </Link> </li>
                 <li> <Link  to  ='/febre' className="b"> Medidor de Febre </Link> </li>
             </ul>

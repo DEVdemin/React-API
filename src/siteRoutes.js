@@ -9,6 +9,7 @@ import Dobro from './pages/Dobro'
 import Media from './pages/media'
 import Soma from './pages/somapost'
 import Tabuada from './pages/Tabuada'
+import Febre from './pages/Febre'
 
 export default function SiteRoutes(){
     return(
@@ -23,6 +24,7 @@ export default function SiteRoutes(){
                             <Route path='/media' element={<Media/>} />
                             <Route path='/somapost' element={<Soma/>} />
                             <Route path='/tabuada' element={<Tabuada/>} />
+                            <Route path='/febre' element={<Febre/>} />
                     </Routes>
         </BrowserRouter>
     )

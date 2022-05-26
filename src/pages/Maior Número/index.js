@@ -35,6 +35,8 @@ export default function Index(){
             <div>
                 <button onClick={verificacao} >Verificar</button>Maior Número é:  {resposta}
             </div>
+            
+            <a href="/">Voltar</a>
 
         </main>
     )

@@ -47,6 +47,9 @@ export default function Index(){
                 O total é de: {Total}
              </div>
              </div>
+
+            <a href="/">Voltar</a>
+
         </main>
     )
 }

@@ -24,6 +24,8 @@ export default function Index(){
             <div>
                 O dobro é {resposta}
             </div>
+            <a href="/">Voltar</a>
+
         </main>
     )
 

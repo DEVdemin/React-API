@@ -8,7 +8,7 @@ export default function Index(){
 
 
     async function calcularTabuada() {
-        const resp = await axios.get('http://localhost:5000/tabuada?a');
+        const resp = await axios.get(`http://localhost:5000/tabuada?a=${numero}`);
         setResposta(resp.data.tabuada)
     }
 
@@ -17,7 +17,7 @@ export default function Index(){
 
         <main className="tabuada">
             <section className="j"> 
-            <h1> Soma de Números</h1>
+            <h1> Tabuada</h1>
 
             
                 <div>
