@@ -7,6 +7,7 @@ import Ingresso from './pages/Ingresso'
 import MaiorNumero from './pages/Maior Número'
 import Dobro from './pages/Dobro'
 import Media from './pages/media'
+import Soma from './pages/soma'
 
 export default function SiteRoutes(){
     return(
@@ -19,6 +20,7 @@ export default function SiteRoutes(){
                             <Route path='/maiorNumero' element={<MaiorNumero/>} />
                             <Route path='/dobro' element={<Dobro/>} />
                             <Route path='/media' element={<Media/>} />
+                            <Route path='/soma' element={<Soma/>} />
                     </Routes>
         </BrowserRouter>
     )
