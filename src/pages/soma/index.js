@@ -34,7 +34,7 @@ export default function Index(){
                 </div>
 
                 <div>
-                    Frequêcia: {resposta}
+                    Total da soma: {resposta}
                 </div>
                 
                 <a href="/">Voltar</a>
