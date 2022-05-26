@@ -22,7 +22,7 @@ export default function Index(){
         <main className="maior"> 
             <h1> Maior Numero </h1>
 
-            <div>
+            <div className="roger">
                 Número: <input type='text' value={numero} onChange={e =>setNumero(Number(e.target.value))} /> <button onClick={add}> Adicionar um Número </button>
             </div>
 
@@ -35,7 +35,7 @@ export default function Index(){
             <div>
                 <button onClick={verificacao} >Verificar</button>
             </div>
-            <div>    
+            <div className="roger">    
                 Maior Número é:  {resposta}
             </div>
 
