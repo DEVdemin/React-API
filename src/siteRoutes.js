@@ -8,7 +8,7 @@ import MaiorNumero from './pages/Maior Número'
 import Dobro from './pages/Dobro'
 import Media from './pages/media'
 import Soma from './pages/somapost'
-import Tabuada from './pages/../Tabuada'
+import Tabuada from './pages/Tabuada'
 
 export default function SiteRoutes(){
     return(
